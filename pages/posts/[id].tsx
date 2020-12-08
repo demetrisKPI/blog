@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux'
 import { PostId, Posts } from '../../types'
 
 const PostPage = ({ id }) => {
+	//@ts-ignore
 	const posts: Posts = useSelector(state => state.posts.posts);
 	const [post, setPost] = useState<PostId>({ title: '', body: '', id: -1 });
 	
